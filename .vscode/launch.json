@@ -1,0 +1,19 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug train.py halfcheetah-medium-expert-v2",
+            "type": "python",
+            "request": "launch",
+            "resourcePath": "/home/jinxin/Diffusion_code/diffuser",
+            "program": "${workspaceFolder}/scripts/train.py",
+            "args": ["--dataset", "halfcheetah-medium-expert-v2"],
+            "console": "integratedTerminal",
+            "pythonPath": "/home/jinxin/miniconda3/envs/diffuser/bin/python",
+            "env": {
+                "PYTHONPATH": "${env:PYTHONPATH}:/home/jinxin/Diffusion_code/diffuser",
+                "LD_LIBRARY_PATH": "${env:LD_LIBRARY_PATH}:/home/jinxin/.mujoco/mujoco200/bin"
+            }
+        }
+    ]
+}
